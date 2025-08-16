@@ -7,9 +7,6 @@ df = pd.read_pickle("../../data/interim/data_processed.pkl")
 
 df["Stage1.Output.Measurement0.U.Actual"].plot()
 
-import pandas as pd
-import numpy as np
-
 
 def clean_series(series: pd.Series, z_thresh: float = 3.0) -> pd.Series:
     """
@@ -52,8 +49,6 @@ df["Stage1.Output.Measurement0.U.Actual"] = clean_series(
 )
 
 df["Stage1.Output.Measurement0.U.Actual"].plot()
-
-import pandas as pd
 
 
 def add_features(

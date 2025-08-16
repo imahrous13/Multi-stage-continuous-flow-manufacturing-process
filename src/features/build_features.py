@@ -137,3 +137,5 @@ def add_features(
 
 df_with_features = add_features(df, target_col="Stage1.Output.Measurement0.U.Actual")
 print(df_with_features.head())
+
+df_with_features.to_pickle("../../data/interim/data_with_features.pkl")
